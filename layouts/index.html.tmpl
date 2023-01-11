@@ -1,0 +1,7 @@
+{{"{{"}} define "main" {{"}}"}}
+{{ $i := 0}}
+{{- range (ds "project").sections -}}
+{{ "{{" }} partial "{{- .type -}}" (index site.Data.project.sections {{ $i }}) {{ "}}" }}
+{{ $i = add $i 1 }}
+{{- end -}}
+{{"{{"}} end {{"}}"}}

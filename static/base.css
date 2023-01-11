@@ -1,0 +1,117 @@
+html {
+  height: 100%;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.maron {
+  font-family: Maron;
+}
+
+.bgr-greyish {
+  background-color: #373947;
+}
+
+.h-80p {
+  height: 80px;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.m-10p-10p {
+  margin: 10px 10px;
+}
+
+.grey {
+  color: grey;
+}
+
+.no-text-decoration {
+  text-decoration: none;
+}
+
+.is-active {
+  color: white;
+}
+
+.margin-right-auto {
+  margin-right: auto;
+}
+
+.margin-left-auto {
+  margin-left: auto;
+}
+
+.m-r-10p {
+  margin-right: 10px;
+}
+
+.m-l-10p {
+  margin-left: 10px;
+}
+
+#small-logo {
+  background-image: url("logo.png");
+  background-size: cover;
+  width: 37px;
+  height: 55px;
+}
+
+.main {
+  background-image: url("home-image.png");
+  background-size: cover;
+  height: 100%;
+  top: 80px;
+
+}
+
+.flex-center-justify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.max-width-100 {
+  max-width: 100%;
+}
+
+.m-top-10p {
+  margin-top: 5%;
+}
+
+.m-bottom-10p {
+  margin-bottom: 10%;
+}

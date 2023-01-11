@@ -1,0 +1,13 @@
+# We don't want to make all URLs absolute (in links/etc)
+# This will break React pre-rendered pages later on if it
+# is enabled.
+canonifyURLs: false
+
+# Caches
+caches:
+  getjson:
+    maxAge: '5m'
+
+# The language code for the site
+languageCode: 'en-us'
+

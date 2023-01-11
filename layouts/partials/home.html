@@ -1,0 +1,13 @@
+<!-- Home -->
+<section style="{{.style}}" class="flex-center-screen">
+  <div class="flex-center-justify flex-col">
+    {{ with .title }}<h2 class="m-r-10p m-l-10p">{{ . }}</h2>{{ end }}
+    {{ with .content }}<p>{{ . | safeHTML }}</p>{{ end }}
+    {{ with .button }}
+    <a id="buy-main-nft" class="">{{ .label }}</a>
+    {{ end }}
+  </div>
+  {{ with .image }}<div class="max-width-100 m-top-10p m-bottom-10p">
+    <img src="{{ . }}" alt="" />
+  </div>{{ end }}
+</section>

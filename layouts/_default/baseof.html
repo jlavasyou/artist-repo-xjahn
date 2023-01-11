@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="{{ .Description }}">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {{$title := default site.Title .Title}}
+    {{with $title}}<title>{{.}}</title>{{end}}
+    <link href="/base.css" rel="stylesheet">
+    <link href="/rainbow.css" rel="stylesheet">
+    <link rel="icon" href="{{site.Data.project.config.favicon}}">
+</head>
+
+<body class="m-0">
+    {{ block "header" . }}
+
+    {{ end }}
+
+    {{ block "main" . }}
+    {{ end }}
+
+    {{ block "footer" . }}
+    {{ end }}
+
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    {{ $opts := dict "targetPath" "index.jsx" }}
+    {{ $jsFile := resources.Get "js/index.jsx" }}
+    {{ $transpiled := $jsFile | js.Build $opts}}
+    <script src="{{$transpiled.RelPermalink}}" defer></script>
+</body>
+
+</html>
